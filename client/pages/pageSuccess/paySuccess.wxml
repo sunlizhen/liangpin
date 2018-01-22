@@ -1,0 +1,61 @@
+<!--client/pages/pageSuccess/paySuccess.wxml-->
+<!--团长支付成功后看到的参团页面  -->
+<view class="container-out"> 
+  <view wx:if='{{isTuanzhang == 1}}'>
+    <view wx:if='{{tuanShow}}'>
+        <image src='{{img}}images/success.png'  class='bg'></image>
+        <text class='groupNum'>{{groupNum}}</text>
+        <text class='timer1'>{{h}}</text> 
+        <text class='timer2'>{{m}}</text> 
+        <text class='timer3'>{{s}}</text>
+        <button class='request' open-type='share'>邀请好友拼团</button>
+        <button  class='ready' bindtap='renShow'>已参团好友</button>
+        <text class='shareBtn' bindtap='canvasTu'>生成拼团图片，点击分享</text>
+        <image src='{{img}}images/quan{{VouId}}.png' class='quan' mode='widthFix'></image>
+        <canvas canvas-id="myCanvas" style="width: 1200px;height: 1930px;"/> 
+    </view>
+  </view>   
+  <!--团员支付成功后看到的参团页面  -->
+  <view wx:elif='{{isTuanzhang == 0}}'>
+    <text class='groupNum'>{{groupNum}}</text>
+    <text class='timer1'>{{h}}</text> 
+    <text class='timer2'>{{m}}</text> 
+    <text class='timer3'>{{s}}</text> 
+    <view class='friendPaySuccess'>
+      <image src='{{img}}images/friendpay.png' mode='widthFix' class='img-bg'></image>  
+      <view class='friend_con'>
+      <!-----------------好友进入分享信息后看到的参团页面 -------------->
+        <view class='friendpay' bindtap='friendPay' wx:if='{{payShow}}'>立即参团 ￥0.01</view>
+        <view class='friendReady' bindtap='renShow'>已参团的好友</view>
+        <view class='mycantuan' bindtap='gototuan'>我要开团</view>
+        <view class='gotoList' bindtap='gotolist'>规则了解</view>
+      </view> 
+    </view>
+  </view>
+
+  <!--看参团好友 开始 -->
+  <view class='hail_wrap' wx:if='{{renShow}}'>
+    <view class='hail-fellow'></view>
+    <view class='hail_con'>
+        <text class='fanhui' bindtap='yinShow'>《 返回参团页</text>
+        <image src='{{img}}images/hail_group.png' mode='widthFix' style='width:100%'></image> 
+        <scroll-view scroll-y class="hail_ren">
+          <view  wx:for="{{user_list}}" class='hail_one'>
+            <image src='{{item.avatar_url}}' mode='widthFix'></image>
+            <text>{{item.nick_name}}</text>
+          </view>
+        </scroll-view>      
+    </view>
+  </view> 
+  <!--看参团好友结束  --> 
+  <view style='width:100%;height:100%;position: absolute;left: 0;top: 0;z-index: 10000' wx:if='{{showTimeout}}'>
+    <view class="timeout-bg"></view>
+    <image class="timeout" bindtap='goHome' src='{{img}}images/timeout.png'></image>
+  </view>
+
+  <view style='width:100%;height:100%;position: absolute;left: 0;top: 0;z-index: 10000' wx:if='{{nochange}}'>
+    <view class='successPrice'></view>
+    <image  bindtap='closeChance' src='{{img}}images/three_time.png' class='nosuccess'></image>
+  </view>
+</view>
+<audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>

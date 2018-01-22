@@ -1,0 +1,5 @@
+/* client/pages/template_img/template_img.wxss */
+image{
+  width:300px;
+  height:300px;
+}

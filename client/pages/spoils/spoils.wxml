@@ -1,0 +1,30 @@
+<!--client/pages/spoils/spoils.wxml-->
+<!-- 团长战利品页面  -->
+<view class='container-out' wx:if='{{isTuanzhang == 1}}'>
+     <view class='tuan'>
+        <image src='{{imgurl}}images/tuanSpoils.png' class='tuanSpoils'></image>
+        <text wx:if="{{payReceive == 0}}" class='friend_con3' bindtap='getCardPay'>领取</text>
+        <view class='spoils_con'>
+        <!--团长5元优惠券  -->
+          <image wx:if='{{voteType == 5}}' src='{{imgurl}}images/quan5-2.png' mode='widthFix' class='quan'></image>
+          <!--团长15元优惠券  -->
+          <image wx:if='{{voteType == 15}}' src='{{imgurl}}images/quan15-2.png' mode='widthFix' class='quan'></image>
+          <!--团长100元优惠券  -->
+          <image wx:if='{{voteType == 100}}' src='{{imgurl}}images/quan100-2.png' mode='widthFix' class='quan'></image>
+          <text wx:if="{{fightReceive == 0}}" class='friend_con4' bindtap='getCardFight'>领取</text>
+          <text bindtap='gotoPrice'>前往抽奖</text>
+        </view>
+    </view>
+</view>
+<!--团员战利品页面  -->
+<view class='container-out' wx:else>     
+    <view class="friend">
+        <image src='{{imgurl}}images/friSpoils.png' class='friSpoils'></image>
+        <text wx:if="{{payReceive == 0}}" class='friend_con3' bindtap='getCardPay'>领取</text>
+        <view class='spoils_con'>
+            <text class='friend_con1' bindtap='gotoPrice'>前往抽奖</text>
+            <text class='friend_con2' bindtap='gotuTuan'>组团当团长</text>
+        </view>
+    </view>   
+</view>
+<audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>

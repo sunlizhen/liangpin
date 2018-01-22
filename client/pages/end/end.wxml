@@ -1,0 +1,6 @@
+
+<!--index.wxml--开始拼团页面-->
+<view class="container-out">
+     <image src='{{imgurl}}images/end_bg.png'  class='bg'></image> 
+     <audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>  
+</view>

@@ -1,0 +1,14 @@
+<!--client/pages/test/index.wxml-->
+<button bindtap='login'>登录</button>
+<button bindtap='WxPay'>微信支付</button>
+<button bindtap='getCardSign'>领取卡券</button>
+<button bindtap='purchaseCreate'>团长开团（15人）</button>
+<button bindtap='purchaseFight'>好友拼团</button>
+<button bindtap='purchaseInfo'>获得团信息</button>
+<button bindtap='getQrcode'>获得分享二维码</button>
+<button bindtap='luckDraw'>抽奖</button>
+<button bindtap='saveLuckDraw'>保存抽奖信息</button>
+
+
+<button bindtap='getAvatarImage'>我得头像</button>
+<button bindtap='getQrcodeImage'>生成分享二维码</button>

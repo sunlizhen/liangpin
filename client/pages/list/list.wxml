@@ -1,0 +1,7 @@
+<!--client/pages/list/list.wxml-->
+<!--详情规则页面  -->
+<view class="container-out">
+   <image src='{{imgurl}}images/list.png?12'  class='bg'></image> 
+   <button class='Open_group' bindtap='goback'>我要开团</button>
+   <audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>
+</view>

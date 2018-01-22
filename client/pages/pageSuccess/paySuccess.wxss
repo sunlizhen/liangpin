@@ -1,0 +1,306 @@
+/* client/pages/pageSuccess/paySuccess.wxss */
+page{
+  width:100%;
+  height:100%;
+  background:#fd8233;
+}
+.container-out{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
+.bg{
+  width: 750rpx;
+  height: 1206rpx;
+  position: absolute;
+}
+.btn{
+  position: absolute;
+  bottom: 30rpx;
+  width: 370rpx;
+  height: 88rpx;
+  left:50%;
+  top:76%;
+  margin-top:-44rpx;
+  margin-left:-185rpx;
+  z-index: 999;
+}
+.rule{
+  position: absolute;
+  color: #f9c080;
+  bottom: 30rpx;
+  left:50%;
+  top:76.5%;
+  margin-left:-65.5rpx;
+}
+.return{
+  width:103rpx;
+  height:45rpx;
+  background:pink;
+  position: absolute;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 45rpx;
+  right: 43rpx;
+  top:34rpx;
+}
+.Receive{
+  position: absolute;
+  width: 260rpx;
+  left:50%;
+  margin-left:-130rpx;
+  top:58%;
+}
+
+/*支付成功页面(团长和好友)*/
+.Open_group{
+  position: absolute;
+  width: 366rpx;
+  height: 77rpx;
+  background: #ed392b;
+  text-align: center;
+  line-height: 77rpx;
+  font-size: 30rpx;
+  color:#fff;
+  font-family: '微软雅黑';
+  left:50%;
+  margin-left:-183rpx;
+  border-radius: 60rpx;
+  bottom:3%;
+}
+.groupNum{
+  position: absolute;
+  left:34%;
+  top:11%;
+  color:#fff;
+  z-index: 999;
+  font-size:85rpx;
+  font-family:微软雅黑; 
+}
+.request,.ready{
+  position: absolute;
+  background: transparent;
+  border: 0;
+  font-size:30rpx;
+  color: #fff;
+  top: 415rpx;
+  left:18%;
+}
+.request::after,.ready::after{
+  border:0;
+}
+.ready{
+  left:54%;
+}
+.shareBtn{
+  position: absolute;
+  color: #fff;
+  font-size: 30rpx;
+  top:868rpx;
+  left: 28%;
+}
+/*时间组件样式  */
+.timer1,.timer2,.timer3{
+  position: absolute;
+  color: #fff;
+  top:250rpx;
+  z-index: 999;
+  font-size: 67rpx;
+  letter-spacing:44rpx;
+}
+.timer1{
+  left: 141rpx;
+}
+.timer2{
+  left:318rpx;
+  letter-spacing:45rpx;
+}
+.timer3{
+  left:495rpx;
+}
+/*看已参团的好友  */
+.hail_wrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hail-fellow{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+.hail_con{
+  position: absolute;
+  z-index: 1001;
+  top: 130rpx;
+  width: 670rpx;
+  height: 900rpx;
+  left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hail_ren{
+  width: 88%;
+  height: 55%;
+  position: absolute;
+  bottom:5%;
+  margin-left:-44%;
+left:50%;
+   display: flex;
+   justify-content: space-between;
+  /*align-items: flex-start; 
+   flex-direction:row;
+   flex-wrap:wrap ; */
+   text-align: center;
+}
+.hail_one{
+  width: 97rpx;
+  height: 140rpx;
+  float: left; 
+  margin:0 10rpx;
+}
+.hail_one image{
+  width: 97rpx;
+  height: 97rpx;
+  margin:0 auto;
+}
+.hail_one text{
+  display: block;
+  color: #fff;
+  font-size: 20rpx;
+  overflow: hidden;
+  height: 40rpx;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-top: -8rpx;
+}
+/*返回参团页按钮  */
+.fanhui{
+  position:absolute;
+  top: 20rpx;
+  right:20rpx;
+  color:#fff;
+  font-size: 28rpx;
+}
+
+/*生成的拼图图片canvas  */
+canvas{
+  position: absolute;
+  top: 0;
+  left: 150%;
+  z-index:999;
+}
+/*奖券的样式  */
+.quan{
+  position: absolute;
+  width: 320rpx;
+  left:50%;
+  margin-left:-160rpx;
+  top:676rpx;
+}
+
+/*好友支付成功后看到的拼团页面*/
+
+.friendPaySuccess{
+  position: absolute; 
+  width: 100%;
+  top:-4%;
+}
+.friend_con{
+  width:60%;
+  height: 665rpx;
+  position: absolute;
+   top:36%;
+   left:50%;
+   margin-left:-30%;
+}
+.friend_con view{
+  position: absolute;
+  z-index:999;
+  font-size: 30rpx;
+  color: #fff;
+}
+.friendReady{
+  top:2%;
+  width: 100%;
+  text-align: center;
+  line-height: 74rpx; 
+}
+.mycantuan{
+  bottom: 3%;
+  left:14%;
+}
+.gotoList{
+  bottom: 3%;
+  right:13%;
+}
+
+.friendpay{
+  width:350rpx;
+  height:80rpx;
+  background:#59d3f1;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: absolute;
+  left:50%;
+  margin-left:-175rpx;
+  top:73%;
+  font-size: 40rpx;
+}
+.img-bg{
+  width: 750rpx;
+}
+.timeout{
+  width: 680rpx;
+  height: 858rpx;
+  display: block;
+  margin: 0px auto;
+  position: absolute;
+  top: 10%;
+  left: 35rpx;
+}
+.timeout-bg{
+  background: black;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.successPrice{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.8;
+  z-index: 99;
+  background: #000;
+}
+.nosuccess{
+  width: 680rpx;
+  height: 538rpx;
+  position: absolute;
+  z-index: 100;
+  left: 35rpx;
+  top: 25%;
+}
+audio{
+  position: absolute;
+  opacity: 0;
+}

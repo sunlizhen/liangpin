@@ -1,0 +1,21 @@
+<!--client/pages/groupSuccess/groupSuccess.wxml-->
+<!--团长拼团成功返回的页面  -->
+<view class='container-out' wx:if='{{isTuanzhang == 1}}'>
+   <image src='{{imgurl}}images/groupSuccess.png' class='groupSussess' mode='widthFix'></image>
+   <view class='friendSuccess'>
+      <view class='lingqu'>
+         <image src='{{imgurl}}images/quan{{VouId}}.png' mode='widthFix'></image>
+         <button wx:if='{{fightReceive == 0}}' class='btn_lingqu' bindtap='lingquan'>点击领取</button>
+      </view>
+      <button bindtap='lookSpoils'>查看战利品</button>
+   </view>
+</view>
+<!--团员拼团成功返回的页面  -->
+<view class='container-out' wx:else>
+    <image src='{{imgurl}}images/groupSuccess.png' class='groupSussess' mode='widthFix'></image>
+    <view class='friendSuccess'>
+      <text>点击查看你的战利品吧！</text>
+      <button  bindtap='lookSpoils'>查看战利品</button>
+   </view> 
+</view>
+<audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>

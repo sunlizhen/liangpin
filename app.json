@@ -1,0 +1,20 @@
+{
+  "pages": [ 
+    "client/pages/index/index",
+    "client/pages/pageSuccess/paySuccess",
+    "client/pages/prize/prize",
+    "client/pages/spoils/spoils",
+    "client/pages/list/list",
+    "client/pages/end/end",
+    "client/pages/groupSuccess/groupSuccess", 
+    "client/pages/openGroup/openGroup",
+    "client/pages/nextPaySuccess/nextPaySuccess"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "拼聊大作战",
+    "backgroundColor": "#fd8233",
+    "navigationBarTextStyle": "white"
+  }
+}

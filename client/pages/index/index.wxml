@@ -1,0 +1,7 @@
+
+<!--index.wxml--开始拼团页面-->
+<view class="container-out">
+     <image src='{{imgurl}}images/index_bg.png'  class='bg'></image>   
+     <image src='{{imgurl}}images/bg_btn.png' class='btn' bindtap='pintuan'> </image>
+      <audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio> 
+</view>

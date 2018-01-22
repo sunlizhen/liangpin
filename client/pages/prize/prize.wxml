@@ -1,0 +1,50 @@
+<!--pages/prize/prize.wxml-->
+<!--抽奖页面-->
+ <canvas class="myCanvas" canvas-id="myCanvas" style="width:100%;height:100%;position: absolute; z-index: -100"/>
+<view class='wrap'>
+<image src='{{imgurl}}images/price.png' class='bg'></image>
+  <view  class="container-out">
+    <view  class="circle" wx:for="{{circleList}}" wx:key='index' style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>  
+    <view class='container-in'>
+          <view class='content-out' wx:for='{{awardList}}' wx:key='{{index}}' style='top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color:{{(index == indexSelect)?colorAwardDefault:colorAwardSelect}}'>
+          {{item.image}}
+          </view>
+    </view>
+    <view class="start-btn" bindtap='start'>立即抽奖</view>
+  </view>
+ <image src='{{imgurl}}images/btn4.png' class='btn' mode='widthFix' bindtap='baocun'></image>
+
+</view>
+ <!--中奖显示的页面  -->
+ <view wx:if='{{formShow}}'>
+  <view class='successPrice'></view>
+  <image src='{{imgurl}}images/submit.png' mode='widthFix' class='success'></image>
+  <form bindsubmit="formSubmit">
+    <label>
+      <text class='input-label'>姓名：</text>
+      <input class='input-input' value='' placeholder-class='placeholder-input' name='input1'>
+      </input>
+    </label>
+    <label>
+      <text class='input-label'>手机：</text>
+      <input class='input-input' value='' placeholder-class='placeholder-input'  name='input2'></input>
+    </label>
+    <label>
+      <text class='input-label'>邮箱：</text>
+      <input class='input-input' value='' placeholder-class='placeholder-input' name='input3'></input>
+    </label>
+    <label>
+      <text class='input-label'>收件地址：</text>
+      <input class='input-input1' value='' placeholder-class='placeholder-input'  name='input4'></input>
+    </label>
+    <button formType="submit">提交</button>
+  </form>
+</view>
+
+<!--没有中奖弹出的页面  -->
+<view style='width:100%;height:100%' wx:if='{{noPriceShow}}'>
+  <view class='successPrice'></view>
+  <image src='{{imgurl}}images/noPrice.png' mode='widthFix' class='nosuccess'></image>
+  <button bindtap='goback' class='return'>返回</button>
+</view>
+<audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>

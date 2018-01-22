@@ -1,0 +1,20 @@
+<!--client/pages/openGroup/openGroup.wxml-->
+<!-- 拼团页面 -->
+<view class="container-out">
+   <image src='{{imgurl}}images/group.png'  class='bg'></image> 
+   <text url='/client/pages/list/list' class='rule' bindtap='gotoRule'>规则了解</text>
+   <view class='anniu'>
+      <button class='fiveGroup' bindtap='fiveGroup' data-id='5'>5人团</button>
+      <button class='FifGroup'  bindtap='fiveGroup' data-id='15'>15人团</button>
+      <button class='oneGroup'  bindtap='fiveGroup' data-id='100'>100人团</button>
+   </view>
+  <view style='width:100%;height:100%;position: absolute;left: 0;top: 0;' wx:if='{{nochange}}'>
+    <view class='successPrice'></view>
+    <image  bindtap='closeChance' src='{{imgurl}}images/three_time.png' class='nosuccess'></image>
+  </view>
+  <audio src="{{src}}" id="myAudio" loop='{{loop}}'></audio>
+</view>
+
+
+
+

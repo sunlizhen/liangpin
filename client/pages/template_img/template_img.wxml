@@ -1,0 +1,7 @@
+<!--client/pages/template_img/template_img.wxml-->
+<text>client/pages/template_img/template_img.wxml</text>
+<button bindtap='img'>点击生成图片</button>
+
+<canvas canvas-id="myCanvas" style="border: 1px solid;width:98%;height:300px;"/>
+<image src='{{imgUrl}}'></image>
+<button bindtap='baocun'>点击按钮保存图片</button>

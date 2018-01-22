@@ -1,0 +1,214 @@
+/* client/pages/ceshi/ceshi.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+  z-index: 100;
+}
+.wrap .bg{
+  width: 750rpx;
+  height: 1206rpx;
+  position: absolute;
+}
+.container-out {  
+  height: 600rpx;  
+  width: 650rpx;  
+  background-color: #f73932;  
+  margin: 100rpx auto;  
+  border-radius: 40rpx;  
+  box-shadow: 0 10px 0 #d50a1d;  
+  position: absolute;  
+  top:25%;
+  left:50%;
+  margin-left:-325rpx;
+}  
+  
+.container-in {  
+  width: 580rpx;  
+  height: 530rpx;  
+  background-color: #df0b2c;  
+  border-radius: 40rpx;  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  top: 0;  
+  bottom: 0;  
+  margin: auto;  
+}  
+  
+/**小圆球  
+box-shadow: inset 3px 3px 3px #fff2af;*/  
+  
+.circle {  
+  position: absolute;  
+  display: block;  
+  border-radius: 50%;  
+  height: 20rpx;  
+  width: 20rpx;
+}  
+  
+.content-out {  
+  position: absolute;  
+  height: 150rpx;  
+  width: 166.6666rpx;  
+  line-height: 150rpx;
+  text-align: center;
+  background-color: #f5f0fc;  
+  border-radius: 15rpx;  
+  box-shadow: 0 5px 0 #f8c1bd;  
+}  
+  
+/**居中 加粗*/  
+  
+.start-btn {  
+  position: absolute;  
+  margin: auto;  
+  top: 0;  
+  left: 0;  
+  bottom: 0;  
+  right: 0;  
+  border-radius: 15rpx;  
+  height: 150rpx;  
+  width: 166.6666rpx;  
+  background-color: #ffe400;  
+  box-shadow: 0 5px 0 #e7930a;  
+  color: #f6251e;  
+  text-align: center;  
+  font-size: 40rpx;  
+  font-weight: bolder;  
+  line-height: 150rpx;  
+}  
+  
+.award-image {  
+  position: absolute;  
+  margin: auto;  
+  top: 0;  
+  left: 0;  
+  bottom: 0;  
+  right: 0;  
+  height: 140rpx;  
+  width: 130rpx;  
+}  
+
+.btn{
+  position: absolute;
+  z-index: 99;
+  width: 250rpx;
+  display: block;
+  left:50%;
+  margin-left:-125rpx;
+  top: 90%;
+}
+
+/*canvas  */
+canvas{
+  position: absolute;
+  z-index: -111;
+}
+/*提交成功弹出框  */
+.successPrice{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.8;
+  z-index: 100;
+  background: #000;
+}
+.success{
+  width: 74%;
+  position: absolute;
+  z-index: 100;
+  left:50%;
+  margin-left:-37%;
+}
+form{
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  font-size: 30rpx;
+  width: 400rpx;
+  left:24%;
+  top:51%;
+}
+form label{
+  display: block;
+  width: 340rpx;
+  height: 60rpx;
+  background: #fff;
+  color: #f63932;
+  border-radius: 100rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight:700;
+  padding-left:20rpx;
+  margin-bottom: 30rpx;
+}
+.placeholder-input{
+  color: #f63932;
+}
+form label input{
+  height: 100%;
+}
+form button{
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  box-shadow: 0 3px 0 #bf092e;
+  margin-top: 130rpx;
+  background: #fc3739;
+  color: #fff;
+  border-radius: 100rpx;
+}
+.nosuccess{
+  width: 74%;
+  position: absolute;
+  z-index: 100;
+  left:50%;
+  margin-left:-37%;
+  top: 25%;
+}
+.return{
+  position: absolute;
+  z-index: 99999;
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  box-shadow: 0 3px 0 #bf092e;
+  margin-top: 130rpx;
+  background: #fc3739;
+  color: #fff;
+  border-radius: 100rpx;
+  top: 45%;
+  left:50%;
+  margin-left:-100rpx;
+}
+.input-label{
+  color: #f63932;
+  position: absolute;
+}
+.input-input{
+  padding-left: 86rpx;
+}
+.input-input1{
+  padding-left: 140rpx;
+}
+audio{
+  position: absolute;
+  opacity: 0;
+}

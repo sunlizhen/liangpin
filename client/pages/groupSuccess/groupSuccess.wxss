@@ -1,0 +1,73 @@
+/* client/pages/groupSuccess/groupSuccess.wxss */
+page{
+  width:100%;
+  height:100%;
+  background:#fd8233;
+}
+.container-out{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top:0;
+  left:0;
+}
+.groupSussess{
+  width: 100%;
+  height: 100%;
+}
+.friendSuccess{
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-top: 100rpx;
+  color: #fff;
+}
+.friendSuccess text{
+  margin-bottom: 10%;
+  font-size: 36rpx;
+  font-weight: 700;
+  top: 5%;
+}
+.friendSuccess button{
+  width: 366rpx;
+  height: 77rpx;
+  font-size: 30rpx;
+  border-radius: 100rpx;
+  border: 0;
+  left: 50%;
+  margin-left:-183rpx;
+  position: absolute;
+  bottom: 5%;
+  background: #5bd4f1;
+  color: #fff;
+  box-shadow: 0 5rpx 0 #2d899a;
+}
+.friendSuccess button::after{
+  border: 0;
+}
+
+/*团长  */
+.lingqu{
+  width: 100%;
+  height: 265rpx;
+  position: relative;
+}
+.lingqu image{
+  width: 400rpx;
+}
+.lingqu .btn_lingqu{
+  width: 220rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: -110rpx;
+  background: #ff86b1;
+  box-shadow: 0 5rpx 0 #ffa9d4;
+  bottom: 13%;
+}
+audio{
+  position: absolute;
+  opacity: 0;
+}
